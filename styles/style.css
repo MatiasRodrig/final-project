@@ -8,13 +8,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: rgb(30, 30, 30);
     height: 80px;
     padding: 0 50px;
 }
 
 .logo img {
-    height: 60px;
+    height: 100px;
 }
 
 .buttons {
@@ -32,5 +32,188 @@ nav {
 .buttons a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
+
+.buttons a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.homebutton a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.homebutton {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px;
+}
+
+.b a {
+    color: rgb(0, 0, 0);
+}
+
+.homebutton:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+body {
+    background-color: rgb(30, 30, 30);
+}
+
+#hero {
+    background-image: url(/assets/rick-n-morty-wallpaper.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+
+}
+
+#hero::before {
+    content: "";
+    background: RGB(30, 55, 38);
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+}
+
+.hero-text {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+}
+
+.hero-title {
+    padding: 30px;
+}
+
+.characters-grid {
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: linear-gradient(to bottom, #66cc66, #339933);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 85%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 29px;
+}
+
+.card p {
+    font-size: 1.5em;
+    line-height: 1.4;
+}
+
+.grid-title {
+    background-color: rgb(30, 30, 30);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.episodes-grid {
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.episode {
+    background: linear-gradient(to bottom, #66cc66, #339933);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    text-align: center;
+}
+
+.episode img {
+    max-width: 85%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.episode h3 {
+    font-size: 29px;
+}
+
+.episode p {
+    font-size: 1.5em;
+    line-height: 1.4;
+}
+
+.episodes-title {
+    background-color: rgb(30, 30, 30);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#about {
+    display: flex;
+    text-align: center;
+    margin: 20px 0;
+    background-color: rgb(30, 30, 30);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-hbo {
+    width: 270px;
+    padding: 20px;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-size: 1em;
 }

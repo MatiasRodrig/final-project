@@ -5,25 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto final</title>
+    <title>Rick and Morty Web</title>
+
     <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="shortcut icon" type="image" href="assets/rick-and-morty-icon-15.jpg">
+
+    <!--Roboto font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#characters">Characters</a></li>
-                <li><a href="#episodes">Episodes</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
             <div class="logo">
                 <img src="assets/Rick-and-Morty.png" alt="Logo">
             </div>
             <div class="buttonbar">
                 <ul class="buttons">
-                    <li><a href="#home">Home</a></li>
+                    <span class="homebutton">
+                        <li class="b"> <a href="#home">Home</a> </li>
+                    </span>
                     <li><a href="#characters">Characters</a></li>
                     <li><a href="#episodes">Episodes</a></li>
                     <li><a href="#about">About</a></li>
@@ -34,49 +38,60 @@
 
     <main>
         <section id="hero">
-            <h1>Welcome to Rick and Morty's website</h1>
-            <p>On this page, you will find information about your favorite characters and episodes of this famous
-                animated series.</p>
+            <div class="hero-text">
+                <h1 class="hero-title">Welcome to Rick and Morty's website</h1>
+                <p class="hero-p">On this page, you will find information about your favorite characters and episodes of
+                    this famous
+                    animated series.</p>
+            </div>
         </section>
 
-        <section id="personajes">
-            <h2>Personajes</h2>
-            <div class="personaje">
-                <img src="" alt="">
-                <h3>Nombre del personaje</h3>
-                <p>Descripción del personaje.</p>
+        <div class="grid-title">
+            <h1>Characters</h1>
+        </div>
+        <section id="characters" class="characters-grid">
+            <div class="card">
+                <img src="assets/rick-and-morty-icon-15.jpg" alt="">
+                <h3>nombre</h3>
+                <p>asdasd</p>
+                <p>dasdsa</p>
             </div>
+            <div class="card">
+                <img src="assets/rick-and-morty-icon-15.jpg" alt="">
+                <h3>nombre</h3>
+                <p>asdasd</p>
+                <p>dasdsa</p>
+            </div>
+            <div class="card">
+                <img src="assets/rick-and-morty-icon-15.jpg" alt="">
+                <h3>nombre</h3>
+                <p>asdasd</p>
+                <p>dasdsa</p>
+            </div>
+        </section>
 
-            <section id="characters">
-            </section>
+        <div class="episodes-title">
+            <h1>Episodes</h1>
+        </div>
+        <section id="episodes" class="episodes-grid">
+            <div class="episode">
+                <h3>Name episode</h3>
+                <p>Air Date</p>
+                <p>Season and episode number</p>
+            </div>
+        </section>
 
-            <section id="episodios">
-                <section id="episodes">
-                    <h2>Episodios</h2>
-                    <div class="episodio">
-                        <h3>Nombre del episodio</h3>
-                        <p>Descripción del episodio.</p>
-                        <p>Temporada y número de episodio.</p>
-                        <div class="episode">
-                            <h3>Name episode</h3>
-                            <p>Air Date</p>
-                            <p>Season and episode number</p>
-                        </div>
-                </section>
-
-                <section id="acerca-de">
-                    <h2>Acerca de</h2>
-                    <p>Información sobre la serie, los creadores, los actores de doblaje, etc.</p>
-                    <section id="about">
-                        <h2>You can see this show in</h2>
-                        <img src="assets/hbo-max-2.jpg" alt="hbomax">
-                    </section>
+        <section id="about">
+            <h2>You can see this show in</h2>
+            <img src="assets/hbo-max-2.jpg" alt="hbomax" class="card-hbo">
+        </section>
     </main>
 
     <footer>
-        <p>Esta página fue creada por Matias Rodriguez como parte del un ejercicio proyecto final del curso Front End de
-            la UTN.</p>
+        <p>This page was created by Matias Rodriguez as part of a final project exercise for the Front End course at UTN
+            course</p>
     </footer>
+
     <script src="app/main.js"></script>
 </body>
 
