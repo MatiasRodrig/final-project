@@ -144,7 +144,10 @@ body {
     color: white;
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    margin-top: 50px;
 }
+
 
 .episodes-grid {
     background-color: rgb(30, 30, 30);
@@ -183,10 +186,12 @@ body {
     color: white;
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    margin-top: 50px;
 }
 
 .name_episode {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-top: 10px;
 }
 
@@ -196,7 +201,7 @@ body {
 
 .air_date {
     padding-bottom: 15px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .air_date h4 {
@@ -206,7 +211,7 @@ body {
 
 .season_episode {
     padding-bottom: 15px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .season_episode h4 {
@@ -242,4 +247,45 @@ footer {
     background-color: rgb(30, 30, 30);
     color: white;
     font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .buttons {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .buttons li {
+        margin: 10px 0;
+    }
+
+    .homebutton {
+        margin-top: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    main {
+
+        color: white;
+        padding: 20px;
+    }
+
+    footer {
+        text-align: center;
+    }
 }
